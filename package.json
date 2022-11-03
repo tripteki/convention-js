@@ -1,0 +1,27 @@
+{
+    "name": "@tripteki/eslint-config",
+    "version": "1.0.3",
+    "description": "Trip Teknologi's Codebase Convention",
+
+    "dependencies": {
+
+        "eslint-plugin-jsdoc": "^39.6.2",
+        "typescript": "^4.8.4", "@typescript-eslint/eslint-plugin": "^5.42.0", "@typescript-eslint/parser": "^5.42.0",
+        "eslint-plugin-vue": "^9.7.0",
+        "eslint-plugin-react": "^7.31.10"
+    },
+
+    "devDependencies": {
+
+        "eslint": "^8.26.0"
+    },
+
+    "peerDependencies": {
+
+        "eslint": ">= 3"
+    },
+
+    "main": "index.js",
+
+    "publishConfig": { "cache": "~/.npm", "access": "public" }, "engineStrict": true
+}
