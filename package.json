@@ -1,7 +1,12 @@
 {
     "name": "@tripteki/eslint-config",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Trip Teknologi's Codebase Convention",
+
+    "license": "MIT",
+    "author": "Trip Teknologi <tripteki.company@gmail.com>",
+    "homepage": "https://github.com/tripteki/convention-js",
+    "bugs": { "url": "https://github.com/tripteki/convention-js/issues" },
 
     "dependencies": {
 
