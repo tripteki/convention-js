@@ -1,6 +1,6 @@
 {
     "name": "@tripteki/eslint-config",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Trip Teknologi's Codebase Convention",
 
     "license": "MIT",
@@ -10,21 +10,14 @@
 
     "dependencies": {
 
-        "eslint-plugin-jsdoc": "^39.6.2",
-        "typescript": "^4.8.4", "@typescript-eslint/eslint-plugin": "^5.42.0", "@typescript-eslint/parser": "^5.42.0",
-        "eslint-plugin-vue": "^9.7.0",
+        "eslint": "^8.28.0",
+        "eslint-plugin-jsdoc": "^39.6.4",
+        "@typescript-eslint/eslint-plugin": "^5.44.0", "@typescript-eslint/parser": "^5.44.0",
+        "eslint-plugin-vue": "^9.8.0",
         "eslint-plugin-react": "^7.31.10"
     },
 
-    "devDependencies": {
-
-        "eslint": "^8.26.0"
-    },
-
-    "peerDependencies": {
-
-        "eslint": ">= 3"
-    },
+    "devDependencies": {},
 
     "main": "index.js",
 

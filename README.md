@@ -8,7 +8,7 @@ Getting Started
 Installation :
 
 ```
-$ npm install --save-dev eslint @tripteki/eslint-config
+$ npm install --save-dev typescript @tripteki/eslint-config
 ```
 
 How to use :
