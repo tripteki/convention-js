@@ -8,6 +8,7 @@ module.exports =
         "@typescript-eslint",
         "vue",
         "react",
+        "react-native",
     ],
 
     "extends": [
@@ -18,16 +19,24 @@ module.exports =
         "plugin:@typescript-eslint/recommended",
         "plugin:vue/recommended",
         "plugin:react/recommended",
+        //"plugin:react-native/all",
     ],
+
+    "env": {
+
+        "react-native/react-native": true,
+    },
 
     //"parser": [
 
         //"@typescript-eslint/parser",
     //],
 
+    "parserOptions": {
 
-
-    "parserOptions": { "ecmaVersion": "latest", },
+        "ecmaVersion": "latest",
+        "ecmaFeatures": { "jsx": true, },
+    },
 
 
 
