@@ -38,7 +38,7 @@ module.exports =
             // "env": {},
         },
         {
-            "files": [ "**/*.jsx", ],
+            "files": [ "**/*.jsx", "**/*.tsx", ],
             "plugins": [ "react", "react-native", ],
             "extends": [
 
@@ -55,23 +55,66 @@ module.exports =
                 "react-native/react-native": true,
             },
         },
-        { "files": [ "*.php", "*.js", "*.ts", "*.py", "*.java", ], },
+        {
+            "files": [ "**/*.ts", "**/*.tsx", ],
+            "plugins": [ "@typescript-eslint", ],
+            "extends": [
+
+                "plugin:@typescript-eslint/recommended",
+            ],
+            "parser": "@typescript-eslint/parser",
+            // "parserOptions": {},
+            // "env": {},
+            "rules": {
+
+                "indent": "off",
+                "@typescript-eslint/indent": "error",
+                "brace-style": "off",
+                "@typescript-eslint/brace-style": "error",
+                "@typescript-eslint/no-var-requires": "off",
+                "keyword-spacing": "off",
+                "@typescript-eslint/keyword-spacing": "error",
+                "padding-line-between-statements": "off",
+                "@typescript-eslint/padding-line-between-statements": [ "error", { "blankLine": "always", "prev": "*", "next": [ "return", ], }, ],
+                "space-before-blocks": "off",
+                "@typescript-eslint/space-before-blocks": "error",
+                "object-curly-spacing": "off",
+                "@typescript-eslint/object-curly-spacing": "error",
+                "func-call-spacing": "off",
+                "@typescript-eslint/func-call-spacing": "error",
+                "quotes": "off",
+                "@typescript-eslint/quotes": "error",
+                "comma-dangle": "off",
+                "@typescript-eslint/comma-dangle": "error",
+                "semi": "off",
+                "@typescript-eslint/semi": "error",
+                "no-extra-semi": "off",
+                "@typescript-eslint/no-extra-semi": "error",
+                "@typescript-eslint/typedef": "error",
+                "naming-convention": [ "error",
+                    { "selector": "variable", "modifiers": [ "const", ], "format": [ "UPPER_CASE", ], "leadingUnderscore": "allow", },
+                    { "selector": [ "variable", "function", ], "format": [ "camelCase", ], "leadingUnderscore": "allow", },
+                    { "selector": "interface", "format": [ "PascalCase", ], "prefix": "I", "suffix": "able", },
+                    { "selector": "class", "format": [ "PascalCase", ], },
+                ],
+                "member-ordering": [ "error", { "default": [ "signature", "field", "constructor", "set", "get", "method", ], }, ],
+            },
+        },
+        // { "files": [ "*.php", "*.js", "*.py", "*.java", ], },
     ],
 
     "plugins": [
 
         "jsdoc",
-        "@typescript-eslint",
     ],
 
     "extends": [
 
         "eslint:recommended",
         "plugin:jsdoc/recommended",
-        "plugin:@typescript-eslint/recommended",
     ],
 
-    "parser": "@typescript-eslint/parser",
+    // "parser": "",
 
 
 
@@ -86,7 +129,6 @@ module.exports =
         "indent": [ "error", 4, ],
         "no-multi-spaces": "error",
         "brace-style": [ "error", "allman", { "allowSingleLine": false, }, ],
-        "@typescript-eslint/no-var-requires": "off",
         "no-constant-condition": "error",
         "space-unary-ops": "error",
         "keyword-spacing": [ "error", { "before": true, "after": true, }, ],
@@ -116,7 +158,7 @@ module.exports =
 
         "no-confusing-arrow": "error",
         "implicit-arrow-linebreak": "error",
-        "arrow-body-style": [ "error", "never", ],
+        "arrow-body-style": [ "error", "as-needed", ],
 
         "no-inline-comments": "error",
         "line-comment-position": [ "error", { "position": "above", }, ],
