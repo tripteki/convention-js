@@ -4,28 +4,28 @@ module.exports =
 {
     "overrides": [
 
-        {
-            "files": [ "**/*.yaml", "**/*.yml", ],
+        // {
+            // "files": [ "**/*.yaml", "**/*.yml", ],
             // "plugins": [],
-            "extends": [
+            // "extends": [
 
-                "plugin:yml/recommended",
-            ],
-            "parser": "yaml-eslint-parser",
+                // "plugin:yml/recommended",
+            // ],
+            // "parser": "yaml-eslint-parser",
             // "parserOptions": {},
             // "env": {},
-        },
-        {
-            "files": [ "**/*.json", ],
-            "plugins": [ "json", ],
-            "extends": [
+        // },
+        // {
+            // "files": [ "**/*.json", ],
+            // "plugins": [ "json", ],
+            // "extends": [
 
-                "plugin:json/recommended",
-            ],
+                // "plugin:json/recommended",
+            // ],
             // "parser": "",
             // "parserOptions": {},
             // "env": {},
-        },
+        // },
         {
             "files": [ "**/*.vue", ],
             "plugins": [ "vue", ],
@@ -141,7 +141,7 @@ module.exports =
         "padding-line-between-statements": [ "error", { "blankLine": "always", "prev": "*", "next": [ "return", ], }, { "blankLine": "always", "prev": [ "const", "let", "var", ], "next": "*", }, { "blankLine": "any", "prev": [ "const", "let", "var", ], "next": [ "const", "let", "var", ], }, ],
         "space-before-function-paren": [ "error", "always", ],
         "space-before-blocks": [ "error", "always", ],
-        // "object-curly-newline": [ "error", "always", ],
+        "object-curly-newline": [ "error", { "ObjectExpression": "always", "ObjectPattern": { "multiline": true, }, "ImportDeclaration": "never", "ExportDeclaration": { "multiline": true, }, }, ],
         "object-curly-spacing": [ "error", "always", ],
         "computed-property-spacing": [ "error", "always", ],
         "array-bracket-spacing": [ "error", "always", ],
