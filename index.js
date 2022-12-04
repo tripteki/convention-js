@@ -54,6 +54,10 @@ module.exports =
 
                 "react-native/react-native": true,
             },
+            "rules": {
+
+                "react/react-in-jsx-scope": "off",
+            },
         },
         {
             "files": [ "**/*.ts", "**/*.tsx", ],
