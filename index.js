@@ -57,6 +57,7 @@ module.exports =
             "rules": {
 
                 "react/react-in-jsx-scope": "off",
+                "react-native/no-raw-text": "off",
             },
         },
         {
