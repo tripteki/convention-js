@@ -17,7 +17,7 @@ module.exports =
         },
         {
             "files": [ "**/*.json", ],
-            "plugins": [ "json", "json-format", ],
+            "plugins": [ "json", ],
             "extends": [
 
                 "plugin:json/recommended",
