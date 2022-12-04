@@ -6,25 +6,25 @@ module.exports =
 
         {
             "files": [ "**/*.yaml", "**/*.yml", ],
-            "plugins": [],
+            // "plugins": [],
             "extends": [
 
                 "plugin:yml/recommended",
             ],
             "parser": "yaml-eslint-parser",
-            "parserOptions": {},
-            "env": {},
+            // "parserOptions": {},
+            // "env": {},
         },
         {
             "files": [ "**/*.json", ],
-            "plugins": [ "json", ],
+            "plugins": [ "json-format", "json", ],
             "extends": [
 
                 "plugin:json/recommended",
             ],
-            "parser": "",
-            "parserOptions": {},
-            "env": {},
+            // "parser": "",
+            // "parserOptions": {},
+            // "env": {},
         },
         {
             "files": [ "**/*.vue", ],
@@ -161,6 +161,7 @@ module.exports =
         "padding-line-between-statements": [ "error", { "blankLine": "always", "prev": "*", "next": [ "return", ], }, { "blankLine": "always", "prev": [ "const", "let", "var", ], "next": "*", }, { "blankLine": "any", "prev": [ "const", "let", "var", ], "next": [ "const", "let", "var", ], }, ],
         "space-before-function-paren": [ "error", "always", ],
         "space-before-blocks": [ "error", "always", ],
+        "lines-between-class-members": [ "error", "always", ],
         "object-curly-newline": [ "error", { "ObjectExpression": "always", "ObjectPattern": "always", "ImportDeclaration": "never", "ExportDeclaration": { "multiline": true, }, }, ],
         "object-curly-spacing": [ "error", "always", ],
         "computed-property-spacing": [ "error", "always", ],
