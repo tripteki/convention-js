@@ -121,6 +121,24 @@ module.exports =
 
     // "parser": "",
 
+    "parserOptions": {
+
+        "ecmaVersion": "latest",
+    },
+
+    "env": {
+
+        "es6": true,
+    },
+
+    "settings": {
+
+        "react": {
+
+            "version": "detect",
+        },
+    },
+
 
 
     "root": true,
