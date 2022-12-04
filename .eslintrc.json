@@ -2,5 +2,13 @@
     "extends": [
 
         "@tripteki/eslint-config"
-    ]
+    ],
+
+    "settings": {
+
+        "react": {
+
+            "version": "detect"
+        }
+    }
 }
