@@ -105,13 +105,13 @@ module.exports =
 
     "plugins": [
 
-        "jsdoc",
+        // "jsdoc",
     ],
 
     "extends": [
 
         "eslint:recommended",
-        "plugin:jsdoc/recommended",
+        // "plugin:jsdoc/recommended",
     ],
 
     // "parser": "",
