@@ -4,28 +4,28 @@ module.exports =
 {
     "overrides": [
 
-        // {
-            // "files": [ "**/*.yaml", "**/*.yml", ],
-            // "plugins": [],
-            // "extends": [
+        {
+            "files": [ "**/*.yaml", "**/*.yml", ],
+            "plugins": [],
+            "extends": [
 
-                // "plugin:yml/recommended",
-            // ],
-            // "parser": "yaml-eslint-parser",
-            // "parserOptions": {},
-            // "env": {},
-        // },
-        // {
-            // "files": [ "**/*.json", ],
-            // "plugins": [ "json", ],
-            // "extends": [
+                "plugin:yml/recommended",
+            ],
+            "parser": "yaml-eslint-parser",
+            "parserOptions": {},
+            "env": {},
+        },
+        {
+            "files": [ "**/*.json", ],
+            "plugins": [ "json", ],
+            "extends": [
 
-                // "plugin:json/recommended",
-            // ],
-            // "parser": "",
-            // "parserOptions": {},
-            // "env": {},
-        // },
+                "plugin:json/recommended",
+            ],
+            "parser": "",
+            "parserOptions": {},
+            "env": {},
+        },
         {
             "files": [ "**/*.vue", ],
             "plugins": [ "vue", ],
