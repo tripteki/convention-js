@@ -141,7 +141,7 @@ module.exports =
         "padding-line-between-statements": [ "error", { "blankLine": "always", "prev": "*", "next": [ "return", ], }, { "blankLine": "always", "prev": [ "const", "let", "var", ], "next": "*", }, { "blankLine": "any", "prev": [ "const", "let", "var", ], "next": [ "const", "let", "var", ], }, ],
         "space-before-function-paren": [ "error", "always", ],
         "space-before-blocks": [ "error", "always", ],
-        "object-curly-newline": [ "error", "always", ],
+        // "object-curly-newline": [ "error", "always", ],
         "object-curly-spacing": [ "error", "always", ],
         "computed-property-spacing": [ "error", "always", ],
         "array-bracket-spacing": [ "error", "always", ],
