@@ -124,6 +124,8 @@ module.exports =
     "parserOptions": {
 
         "ecmaVersion": "latest",
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
     },
 
     "env": {
